@@ -16,3 +16,5 @@ The app MUST use:
 The CDNs of all ingredients, along with `script.js` and `style.css` files, have already been linked in the `<head>`.
 
 ### SCREENSHOT
+
+![calculator-app](https://user-images.githubusercontent.com/46775349/55641867-5e70f100-57e8-11e9-9c33-fdda01b737d7.png).
