@@ -1,6 +1,6 @@
  CALCULATOR APP
 --------------
-You can see website here: https://shamansarii.github.io/calculator/
+You can see website here: https://shamansarii.github.io/calculator-app/.
 
 ### APP FEATURES
 
