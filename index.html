@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+	<title>Calculator</title>
+	<link rel="icon" href="image/images.png" type="image">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="main">
+		<h1>Calculator</h1>
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+			<table>
+				<tr>
+					<td><input class="button" type="button" value="C" onclick="clean()"></td>
+					<td><input class="button" type="button" value="<" onclick="back()"></td>
+					<td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+					<td><input class="button" type="button" value="x" onclick="insert('*')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+					<td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+					<td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+					<td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+					<td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+					<td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+					<td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+					<td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+					<td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+					<td rowspan=5><input class="button" style="height: 106px" type="button" value="=" onclick="equal()"></td>
+				</tr>
+				<tr>
+					<td colspan=2><input class="button" style="width: 106px" type="button" value="0" onclick="insert(0)"></td>
+					<td><input class="button" type="button" value="." onclick="insert('.')"></td>
+				</tr>
+			</table>
+	</div>
+</body>
+</html>
